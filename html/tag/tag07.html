@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <label>치즈추가<input type="checkbox"></label>
+    <label>양배추추가<input type="checkbox"></label>
+    <label>패티추가<input type="checkbox"></label>
+
+    <br><br>
+
+    <!-- label 명시적인 방법
+        id속성 + for속성-->
+    <label for="cheese">치즈추가</label>  <input type="checkbox" id="cheese">
+    <label for="cabbage">양배추추가</label>  <input type="checkbox" id="cabbage">
+    <label for="patty">패티추가</label>    <input type="checkbox" id="patty">
+
+    <br><br>
+    <fieldset>
+        <legend>족발 사이즈 선택</legend>
+        <label>족발 대 <input type="radio" name="size" checked></label>
+        <label>족발 중<input type="radio" name="size"></label>
+        <label>족발 소<input type="radio" name="size"disabled></label>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>블로그 글쓰기</legend>
+        제목 <input type="text" value="벨류속성값이 초기값"><br><br>
+        내용<textarea readonly>콘텐츠가 있는 태그</textarea>
+
+    </fieldset>
+
+    <br>
+
+    <select>
+        <option>기본김밥</option>
+        <option>치즈김밥</option>
+        <option selected>참치김밥</option>
+    </select>
+    
+    <br>
+
+    <select multiple size="8">
+        <optgroup label="김밥">
+            <option>기본김밥</option>
+            <option selected>치즈김밥</option>
+            <option>참치김밥</option>
+        </optgroup>
+        <optgroup label="행버거">
+            <option>징거버거</option>
+            <option>싸이버거</option>
+            <option>빅맥</option>
+        </optgroup>
+    </select>
+
+    <br>
+
+    <button disabled>버튼태그</button>
+    <input type="button" value="인풋버튼">
+    <input type="reset" value="인풋리셋버튼">
+    <input type="submit" value="인풋제출버튼">
+
+    <button type="submit">버튼태그</button>
+    <button type="button">버튼태그</button>
+
+    <button>
+        <img src="../../images/dog1.png">
+        이미지 들어간 버튼
+    </button>
+
+    <br><br>
+
+    <input type="text" maxlength="8">
+
+    일회용품 받지 않겠습니다. <input type="checkbox" checked>
+
+    <br><br>
+    <form> 
+        <input type="text"value="아이디 입력">
+        <input type="text" placeholder="아이디입력">
+        <input type="reset">
+        <input type="submit">
+        <br>
+        <button type="button">이건 그냥버튼</button><!--submit 인것처럼 제출 기능이 작동함-->
+        <button type="submit">submit 버튼</button>
+    </form>
+
+    
+
+</body>
+</html>
