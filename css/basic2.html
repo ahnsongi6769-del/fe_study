@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 1.내부 스타일 시트 방식
+    -->
+        <style>
+            /*head 태드 내부, style 태그 내부*/
+            /* css 코드 작성영역*/
+            h1 { 
+                color:red;  
+            }
+            h3{
+                color: purple;
+            }
+        </style>
+    <!-- 2. 파일을 따로 만드는 외부 스타일 시트 방식-->
+    <!-- 외부 css 파일 연결-->
+    <link rel="stylesheet" href="../css/basic.css">
+</head>
+<body>
+    <!-- 3. 인라인 스타일 적용 방식 vs 내부 스타일 방식 -->
+    <h1 style="color: coral;">CSS Basic</h1>  
+
+    <!-- 3. 인라인 스타일 적용 방식 : 잘 안쓰는 경우-->
+    
+    <h2 style="color: green;"></style>h2h2</h2>
+
+    <!-- 내부와 외부 스타일 시트 적용은 가장 마지막에 적용한거-->
+    <!-- 적용 순서-->
+    <h3>h3h3</h3>
+
+    <h4>h4h4</h4>
+
+</body>
+</html>
