@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+        .font-atr1{
+            font-family: cursive;
+            font-size: medium;
+            font-variant: small-caps;
+            letter-spacing: 10px;
+            line-height: 5rem;
+        }
+        .font-atr2{
+            font-weight: 700;
+            /* 700 bold */
+            font-style: italic;
+            
+
+        }
+
+        .font-box{
+            text-align: center;
+            font-size: 24px;
+                }
+
+        .inbox1 {
+            font-size: 2em;
+            /* em 상대크기 부모요소 크기 대비 */
+        }
+
+        .inbox2 {
+            font-size: 2rem;
+             /* rem 상대크기 */
+             /* html 크기 대비 */
+             /* html 기본 텍스트 크기 16px */
+        }
+
+        .nanum-pen-script-regular {
+        font-family: "Nanum Pen Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+}
+
+        
+    </style>
+</head>
+<body>
+    <p>기본 텍스트</p>
+    <p class="font-atr1">Font atr1</p>
+    <p class="font-atr2 nanum-pen-script-regular">Font atr2 글씨 속성</p>
+
+
+    <div class="font-box">
+        <p>font box 글자 1</p>
+        <p class="inbox1">font box 글자 22</p>
+        <p class="inbox2">font box 글자 333</p>
+        <p> 오늘의 특가
+            <del>5,000원</del><ins>3,000원</ins>
+        </p>
+        <p> 오늘의 특가
+            <span style="text-decoration: line-through;">5,000원</span><span style="text-decoration: underline;">3,000원</span>
+        </p>
+    </div>
+
+    <div class="font-box2">
+        <p class="nanum-pen-script-regular">font box 글자 1</p>
+        <p class="inbox1">font box 글자 22</p>
+        <p class="inbox2">font box 글자 333</p>
+    </div>
+
+</body>
+</html>
