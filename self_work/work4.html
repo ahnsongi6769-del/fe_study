@@ -20,52 +20,74 @@
         margin-top: 100px;
         border: 1px solid black;
         padding: 10px;
-        
 
     }
 
-    .container {
-        width: 300px;
-        margin: 0 auto;
+    button {
+        background: #346aff;
+        width: 80%;
+        padding: 12.5px 0;
+        border-radius: 14px;
+        font-size: 16px;
+        color: aliceblue;
+
+    }
+
+    input {
+        width: 250px;
+        height: 25px;
+        border: 1px solid rgb(161, 151, 151);
+    }
+    .bottom{
+        padding-top: 20px ;
+        
+    }
+    .log:hover{
+        border-bottom:2px solid #346aff;
+        color: #346aff;
     }
 </style>
 
 <body>
     <div class="main">
-        <form action="#">
-            <div>
-                <h2>지금 가입하시면</h2>
-                <H2><strong>웰컴쿠폰을 드려요!</strong></H2>
-            </div><br>
-            <div class="log">
-            <span>로그인</span><span>회원가입</span>  
-            </div><br>
-            <div class="container">
-                <fieldset>
-                    <legend>이메일</legend>
-                    <label for="username">
-                        <input type="text" id="username" name="username" placeholder="이메일을 입력해주세요">
-                    </label><br>
-                    <legend>이름/업체명</legend>
-                    <label for="username">
-                        <input type="text" id="username" name="username" placeholder="2자 이상 20자 이하">
-                    </label><br>
-                    <legend>비밀번호</legend>
-                    <label for="username">
-                        <input type="text" id="username" name="username" placeholder="영문 숫자 특수문자 조합 6-16자리">
-                    </label><br>
-                    <legend>비밀번호 확인</legend>
-                    <label for="username">
-                        <input type="text" id="username" name="username" placeholder="비밀번호를 다시 입력해주세요">
-                    </label><br>
-                    <div class="join">
-                        <button type="submit">
-                            회원 가입하기
-                        </button><br>
-                    </div>
-                </fieldset><br>
+        <div>
+            지금 가입하시면
+            <H3>웰컴쿠폰을 드려요!</H3>
+        </div><br>
+        <div class="log" >
+            <span>로그인</span> <span>회원가입</span>
+        </div><br>
+        <div class="container">
+            <form action="#"></form>
+            <fieldset>
+                <legend>이메일</legend>
+                <label for="username">
+                    <input type="email" name="username" placeholder="이메일을 입력해주세요">
+                </label><br>
+                <legend>이름/업체명</legend>
+                <label for="username">
+                    <input type="text" name="username" placeholder="2자 이상 20자 이하">
+                </label><br>
+                <legend>비밀번호</legend>
+                <label for="username">
+                    <input type="password" name="username" placeholder="영문 숫자 특수문자 조합 6-16자리">
+                </label><br>
+                <legend>비밀번호 확인</legend>
+                <label for="username">
+                    <input type="password" name="username" placeholder="비밀번호를 다시 입력해주세요">
+                </label>
+            </fieldset><br>
+            <div class="bottom">
+                <p>
+                <h5><a href="#">개인정보수집이용안내</a>및 <a href="#">약관</a>에 동의합니다.</h5>
+                </p>
+                <button type="submit">
+                    회원 가입하기
+                </button><br>
                 <a href="#">SNS로 간편하게 가입하기</p>
             </div>
+
+        </div>
         </form>
     </div>
 
