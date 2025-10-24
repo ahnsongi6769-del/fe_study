@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+
+     .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center; /* 가로 중앙 정렬 */
+        background-color: rgba(0,0,0,0.05);
+     }
+
+     /* 중앙정렬용 가짜 inline-block 요소 */
+     .container::before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle; /* 세로 중앙 정렬 */
+     }
+
+     .box {
+        display: inline-block;
+        vertical-align: middle;
+        background: white;
+        width: 320px;
+        border-radius: 8px;
+        padding: 20px;
+        text-align: left; /* 내부 텍스트는 왼쪽 정렬로 복구 */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        position: relative;
+     }
+
+     .x {
+        position: absolute;
+        right: 12px;
+        top: 10px;
+        border: none;
+        background: none;
+        font-size: 20px;
+        cursor: pointer;
+     }
+
+     h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+     }
+
+     .tabs {
+        display: flex;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 15px;
+     }
+
+     .tab {
+        flex: 1;
+        text-align: center;
+        padding: 8px;
+        cursor: pointer;
+        color: gray;
+     }
+
+     .tab.active {
+        border-bottom: 2px solid #4285f4;
+        color: #4285f4;
+        font-weight: bold;
+     }
+
+     label {
+        font-size: 12px;
+        margin-bottom: 4px;
+        display: block;
+     }
+
+     input[type="email"],
+     input[type="text"],
+     input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+     }
+
+     .checkbox {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin-bottom: 15px;
+     }
+
+     .submit {
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+     }
+
+     .sns {
+        text-align: center;
+        color: #4285f4;
+        font-size: 13px;
+        margin-top: 10px;
+     }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <button class="x">×</button>
+      <h2>지금 가입하시면<br><span>웰컴쿠폰을 드려요!</span></h2>
+
+      <div class="tabs">
+        <span class="tab login">로그인</span>
+        <span class="tab signup active">회원가입</span>
+      </div>
+
+      <form>
+        <label>이메일</label>
+        <input type="email" placeholder="이메일을 입력해주세요." required />
+
+        <label>이름 / 업체명</label>
+        <input type="text" placeholder="2자 이상 20자 이하" required />
+
+        <label>비밀번호</label>
+        <input type="password" placeholder="영문 숫자 특수문자 조합 6-16자리" required />
+
+        <label>비밀번호 확인</label>
+        <input type="password" placeholder="비밀번호를 다시 입력해주세요." required />
+
+        <div class="checkbox">
+          <input type="checkbox" id="agree" required />
+          <label for="agree">개인정보수집이용안내 및 약관에 동의 합니다</label>
+        </div>
+
+        <button type="submit" class="submit">회원 가입하기</button>
+        <p class="sns">SNS로 간편하게 가입하기</p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
