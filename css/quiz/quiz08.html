@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    .box1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: block;
+            animation-name: b1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes b1{
+            0%
+            {background-color: blue;
+            margin-left: 0%;}
+            50%{background-color: orange;
+            margin-left: 10%;}
+            100%
+            {background-color: pink;
+            margin-left: 20%;}
+        
+        }
+    .box2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: block;
+            animation-name: b2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes b2{
+            0%
+            {background-color: blue;
+            margin-top: 0%;}
+            50%{background-color: orange;
+            margin-top: 10%;}
+            100%
+            {background-color: pink;
+            margin-top: 20%;}
+        }
+    .box3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            display: block;
+            animation-name: b3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes b3{
+            0%
+            {background-color: blue;
+            margin-top: 0%;
+            margin-left: 0%;}
+            50%{background-color: orange;
+            margin-top: 10%;
+            margin-left: 10%;}
+            100%
+            {background-color: pink;
+            margin-top: 20%;
+            margin-left: 20%;}
+        }
+
+        .box:hover{
+            animation-play-state: paused;}
+
+
+    </style>
+</head>
+<body>
+
+        <div class="box box1"></div>
+        <div class="box box2" ></div>
+        <div class="box box3" ></div>
+
+
+</body>
+</html>
