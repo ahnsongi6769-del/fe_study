@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+        }
+        h2{color: red;}
+
+        p{font-weight: bold;}
+
+        @media screen and (max-width:768px) {
+            .box {background-color: lightcoral;}
+            h2 { color: blue;}
+            p{font-weight: normal;
+              font-family: 12px;  
+            }
+        }
+        @media screen and (max-width:480px) {
+            .box {width: 200px;
+                 background-color: bisque;}
+            h2{color: chocolate;}
+        }
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>h2 tag</h2>
+        <p>p tag</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cupiditate, mollitia sint cumque beatae dignissimos reiciendis quam, impedit quo numquam consectetur praesentium nostrum deserunt. Esse omnis quia possimus nesciunt recusandae!</p>
+    </div>
+</body>
+</html>
