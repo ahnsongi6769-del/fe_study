@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .nav-menu{
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            display: inline-block;
+        } */
+
+    </style>
+    <link rel="stylesheet" href="./page.css">
+</head>
+<body>
+    <h1>여기는 페이지 a</h1>
+    <div>
+        <a href="page-b.html">
+        <div class="nav-menu">page-b로 이동</a></div>
+            
+        <a href="page-c.html">page-c로 이동</a>
+    </div>
+    <div class="navbar"> 
+        <ul>
+            <li><a href="page-a.html"> page-a이동</a></li>
+            <li><a href="page-b.html"> page-b이동</a></li>
+            <li><a href="page-c.html"> page-c이동</a></li>
+        </ul>
+    </div>
+    <form action="./page-c.html"> 
+        <!-- 어디로 전송을 할거냐 
+        액션이라는 곳에 어떤 주소에 따라서 해당 경로로 이동 시키겠다.-->
+        <div>
+            이름 : <input type="text">
+        </div>
+        <div>
+            닉네임 : <input type="text">
+        </div>
+        <input type="submit">
+        <button type="submit">저장</button>
+    </form>
+
+    <!-- 페이지 이동 확인을 위한 교육 a태그로도 이동 가능하고, form으로도 이동 가능하다 -->
+</body>
+</html>
